@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(contactBG.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;   
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+.main{
+    max-width: 28%;
+    margin: auto;
+    display: flex;
+}
+
+h1{
+    text-align: center;
+    margin: 30px;
+}
+
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ }
+
+ .myInput{
+    width: 61%;
+    font-size: 16px;
+    padding: 9px;
+    margin: 16px;
+    border: 2px solid black;
+    border-radius: 12px;
+    outline: none;
+}
+
+.btn{
+   
+    margin: 4px auto;
+    display: block;
+    padding: 5px 12px;
+    background: #2e2929;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid rgb(243, 108, 108);
+    border-radius: 9px;
+    cursor: pointer;
+    outline: none;
+}
+
+.container{
+    min-height: 66vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 35px 0; */
+    /* justify-content: center; */
+}
+
+.container h1{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 34px;
+}
+
+@media only screen and (max-width: 888px){
+
+         .main{
+            display: flex;
+            flex-direction: row;
+         }
+
+         ul li a{
+            padding: 11px 20px;
+            margin: auto;
+            display: flex;
+            border-radius: 10px;
+         }
+
+         ul li a:hover{
+            background-color: white;
+            
+            padding: 10px 20px;
+            color: black;
+        }
+}
